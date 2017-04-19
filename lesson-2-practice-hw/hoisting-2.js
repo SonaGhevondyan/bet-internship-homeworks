@@ -5,10 +5,8 @@
 (function(global) {
     //var global;  - I'm not sure that this is correct ))
     function datediff(fromDate, toDate){
-        var fromDate, toDate;
         var startDate;
-        var now, toDate, diff, date, years, months, days, hours, minutes, seconds, diffDate;
-
+        
         if (!fromDate){
             throw new Error('Date should be specified');
         }

@@ -1,23 +1,16 @@
 //Hoisting 1
 //URL
 //https://github.com/davebalmer/turtlewax/blob/master/hsv.js
-var hsvtorgb;
 
 hsvtorgb = function(h, s, v){  //the name of the function should be changed. - not understandable
     // I don't know if I should hoist h, s, v if they are declared as arguments.
-    //var h;s
-    //var s;
-    //var v;
     var i;
     var f;
     var p;
     var q;
     var t;
+
     function format(r, g, b) {
-        //The same question is here for r, g, b.
-        //var r;
-        //var g;
-        //var b;
         return "rgb(" + Math.round(r * 255) + "," + Math.round(g * 255) + "," + Math.round(b * 255) + ")";
     }
 
