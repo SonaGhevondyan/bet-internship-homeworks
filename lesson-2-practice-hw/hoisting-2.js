@@ -1,12 +1,11 @@
-//Hoisting 2
-//URL
-//https://github.com/dmfilipenko/datediff/blob/master/datediff.js
+// Hoisting 2
+// URL
+// https://github.com/dmfilipenko/datediff/blob/master/datediff.js
 
 (function(global) {
-    //var global;  - I'm not sure that this is correct ))
     function datediff(fromDate, toDate){
-        var startDate;
-        
+        var startDate, now, toDate, diff, date, years, months, days, hours, minutes, diffDate,;
+
         if (!fromDate){
             throw new Error('Date should be specified');
         }
@@ -47,11 +46,11 @@
 
 
     if (typeof define === "function" && define.amd){
-        define(function(){  //can't understand how this function should be hoisted.
+        define(function(){  // still can't understand how this function should be hoisted if it an agrument for define.
             return datediff;
         });
     } else if (typeof module === "object" && module.exports){
-        module.exports = datediff;  //module object too. 
+        module.exports = datediff;
     } else {
         global.datediff = datediff;
     }
