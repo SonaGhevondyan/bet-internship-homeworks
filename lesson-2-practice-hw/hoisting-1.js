@@ -1,9 +1,8 @@
-//Hoisting 1
-//URL
-//https://github.com/davebalmer/turtlewax/blob/master/hsv.js
+// Hoisting 1
+// URL
+// https://github.com/davebalmer/turtlewax/blob/master/hsv.js
 
-hsvtorgb = function(h, s, v){  //the name of the function should be changed. - not understandable
-    // I don't know if I should hoist h, s, v if they are declared as arguments.
+hsvtorgb = function(h, s, v){
     var i;
     var f;
     var p;
