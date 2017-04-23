@@ -3,9 +3,9 @@
 var values = {};
 (function() {
     function setPrimitive(object, primitive) {
-        object.x = primitive;
+        object.firstKey = primitive;
         function valueOf() {
-            return this.x;
+            return this.firstKey;
         }
         object.valueOf = valueOf;
     }
