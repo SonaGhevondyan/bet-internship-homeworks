@@ -1,4 +1,4 @@
-//matrixIndexOf
+// matrixIndexOf
 'use strict'
 function matrixIndexOf(matrix, item) {
     for(let i = 0; i < matrix.length; i++) {
@@ -8,5 +8,5 @@ function matrixIndexOf(matrix, item) {
             }
         }
     }
-    return -1;
+    return null;
 }

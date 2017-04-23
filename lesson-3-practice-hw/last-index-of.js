@@ -1,4 +1,4 @@
-//lastIndexOf
+// lastIndexOf
 'use strict'
 function lastIndexOf(array, item) {
     for(let i = array.length-1; i >= 0; i--) {

@@ -1,6 +1,12 @@
-//getRandomInt
+// getRandomInt
 'use strict'
-function getRandonInt(max) {
-    let RandomFloat = max * Math.random();
-    return RandomFloat.toFixed(0);
+function getRandomInt(max) {
+    var randomFloat = (max + 1) * Math.random() + '';
+    var randomInt = '';
+    var i = 0;
+    while(randomFloat[i] !== '.') {
+        randomInt += randomFloat[i];
+        i++;
+    }
+    return Number(randomInt);
 }
